@@ -1,0 +1,14 @@
+<a href="#"  class="list-group-item list-group-item-action dflex justify-content-between align-items-center"
+(click)="onSelected()">
+    <div>
+        <h4 class="list-group-item-heading">
+            {{recipe.name}}
+        </h4>
+        <p class="list-group-item-text">
+            {{recipe.description}}
+        </p> 
+    </div>
+    <span>
+        <img [src]="recipe.imagePath" alt="{{recipe.name}}" style="max-height: 75px;">
+    </span>
+</a>

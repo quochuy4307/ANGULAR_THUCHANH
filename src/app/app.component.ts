@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Buoi01';
+  title = 'angular-complete';
+  loadedFeature = 'recipe';
+  
+ onNavigate(feature: string) {
+ this.loadedFeature = feature;
+ }
 }

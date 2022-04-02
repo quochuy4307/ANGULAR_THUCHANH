@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Buoi01'`, () => {
+  it(`should have as title 'angular-complete'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Buoi01');
+    expect(app.title).toEqual('angular-complete');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Buoi01 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-complete app is running!');
   });
 });
