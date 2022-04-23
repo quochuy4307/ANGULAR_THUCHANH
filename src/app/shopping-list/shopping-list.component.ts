@@ -11,9 +11,12 @@ export class ShoppingListComponent implements OnInit {
   constructor(private shoppingListService: ShoppingListService) { }
 
   ngOnInit(): void {
-    this.ingredients = this.shoppingListService.getIngredient();
+    this.ingredients = this.shoppingListService.getIngredients();
   }
 
+    onEditItem(index: number | undefined){
+      this.shoppingListService.startedEditing.emit(index)
+    }
   // onIngredientAdd(ingredient: Ingredient){
   //   this.ingredients.push(ingredient);
   // }
